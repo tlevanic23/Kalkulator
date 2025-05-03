@@ -17,6 +17,8 @@ namespace Kalkulator
             InitializeComponent();
         }
 
+        int prviBroj, drugiBroj;
+
         private void txt_TextChanged(object sender, EventArgs e)
         {
 
