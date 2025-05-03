@@ -70,5 +70,30 @@ namespace Kalkulator
         {
             txt.Text += " 9";
         }
+
+        private void btnPlus_Click(object sender, EventArgs e)
+        {
+            txt.Text += " +";
+        }
+
+        private void btnMinus_Click(object sender, EventArgs e)
+        {
+            txt.Text += " -";
+        }
+
+        private void btnTimes_Click(object sender, EventArgs e)
+        {
+            txt.Text += " *";
+        }
+
+        private void btnDivide_Click(object sender, EventArgs e)
+        {
+            txt.Text += " /";
+        }
+
+        private void btnEqual_Click(object sender, EventArgs e)
+        {
+            txt.Text += " =";
+        }
     }
 }

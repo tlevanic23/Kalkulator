@@ -34,11 +34,15 @@
             this.btn6 = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
-            this.btn9 = new System.Windows.Forms.Button();
             this.btn8 = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
             this.txt = new System.Windows.Forms.TextBox();
             this.btn10 = new System.Windows.Forms.Button();
+            this.btnPlus = new System.Windows.Forms.Button();
+            this.btnTimes = new System.Windows.Forms.Button();
+            this.btnMinus = new System.Windows.Forms.Button();
+            this.btnDivide = new System.Windows.Forms.Button();
+            this.btnEqual = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn1
@@ -107,13 +111,6 @@
             this.btn4.UseVisualStyleBackColor = true;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
-            // btn9
-            // 
-            this.btn9.Location = new System.Drawing.Point(0, 0);
-            this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(75, 23);
-            this.btn9.TabIndex = 10;
-            // 
             // btn8
             // 
             this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -157,14 +154,74 @@
             this.btn10.UseVisualStyleBackColor = true;
             this.btn10.Click += new System.EventHandler(this.btn10_Click);
             // 
+            // btnPlus
+            // 
+            this.btnPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnPlus.Location = new System.Drawing.Point(12, 66);
+            this.btnPlus.Name = "btnPlus";
+            this.btnPlus.Size = new System.Drawing.Size(100, 120);
+            this.btnPlus.TabIndex = 12;
+            this.btnPlus.Text = "+";
+            this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
+            // 
+            // btnTimes
+            // 
+            this.btnTimes.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnTimes.Location = new System.Drawing.Point(224, 66);
+            this.btnTimes.Name = "btnTimes";
+            this.btnTimes.Size = new System.Drawing.Size(100, 120);
+            this.btnTimes.TabIndex = 13;
+            this.btnTimes.Text = "*";
+            this.btnTimes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnTimes.UseVisualStyleBackColor = true;
+            this.btnTimes.Click += new System.EventHandler(this.btnTimes_Click);
+            // 
+            // btnMinus
+            // 
+            this.btnMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnMinus.Location = new System.Drawing.Point(118, 66);
+            this.btnMinus.Name = "btnMinus";
+            this.btnMinus.Size = new System.Drawing.Size(100, 120);
+            this.btnMinus.TabIndex = 14;
+            this.btnMinus.Text = "-";
+            this.btnMinus.UseVisualStyleBackColor = true;
+            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
+            // 
+            // btnDivide
+            // 
+            this.btnDivide.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDivide.Location = new System.Drawing.Point(330, 66);
+            this.btnDivide.Name = "btnDivide";
+            this.btnDivide.Size = new System.Drawing.Size(100, 120);
+            this.btnDivide.TabIndex = 15;
+            this.btnDivide.Text = "/";
+            this.btnDivide.UseVisualStyleBackColor = true;
+            this.btnDivide.Click += new System.EventHandler(this.btnDivide_Click);
+            // 
+            // btnEqual
+            // 
+            this.btnEqual.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnEqual.Location = new System.Drawing.Point(171, 260);
+            this.btnEqual.Name = "btnEqual";
+            this.btnEqual.Size = new System.Drawing.Size(100, 120);
+            this.btnEqual.TabIndex = 16;
+            this.btnEqual.Text = "=";
+            this.btnEqual.UseVisualStyleBackColor = true;
+            this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
+            // 
             // Kalkulator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnEqual);
+            this.Controls.Add(this.btnDivide);
+            this.Controls.Add(this.btnMinus);
+            this.Controls.Add(this.btnTimes);
+            this.Controls.Add(this.btnPlus);
             this.Controls.Add(this.btn10);
             this.Controls.Add(this.txt);
-            this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn8);
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.btn6);
@@ -188,11 +245,15 @@
         private System.Windows.Forms.Button btn6;
         private System.Windows.Forms.Button btn5;
         private System.Windows.Forms.Button btn4;
-        private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.TextBox txt;
         private System.Windows.Forms.Button btn10;
+        private System.Windows.Forms.Button btnPlus;
+        private System.Windows.Forms.Button btnTimes;
+        private System.Windows.Forms.Button btnMinus;
+        private System.Windows.Forms.Button btnDivide;
+        private System.Windows.Forms.Button btnEqual;
     }
 }
 
