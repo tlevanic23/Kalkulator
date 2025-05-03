@@ -18,6 +18,7 @@ namespace Kalkulator
         }
 
         int prviBroj, drugiBroj;
+        int brojac = 0;
 
         private void txt_TextChanged(object sender, EventArgs e)
         {
