@@ -38,6 +38,7 @@
             this.btn8 = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
             this.txt = new System.Windows.Forms.TextBox();
+            this.btn10 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn1
@@ -60,6 +61,7 @@
             this.btn2.TabIndex = 1;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
@@ -70,6 +72,7 @@
             this.btn3.TabIndex = 2;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn6
             // 
@@ -80,6 +83,7 @@
             this.btn6.TabIndex = 5;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn5
             // 
@@ -90,6 +94,7 @@
             this.btn5.TabIndex = 4;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn4
             // 
@@ -100,16 +105,14 @@
             this.btn4.TabIndex = 3;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn9
             // 
-            this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn9.Location = new System.Drawing.Point(688, 318);
+            this.btn9.Location = new System.Drawing.Point(0, 0);
             this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(100, 120);
-            this.btn9.TabIndex = 8;
-            this.btn9.Text = "9";
-            this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Size = new System.Drawing.Size(75, 23);
+            this.btn9.TabIndex = 10;
             // 
             // btn8
             // 
@@ -120,6 +123,7 @@
             this.btn8.TabIndex = 7;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn7
             // 
@@ -130,6 +134,7 @@
             this.btn7.TabIndex = 6;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // txt
             // 
@@ -141,11 +146,23 @@
             this.txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txt.TextChanged += new System.EventHandler(this.txt_TextChanged);
             // 
+            // btn10
+            // 
+            this.btn10.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn10.Location = new System.Drawing.Point(688, 318);
+            this.btn10.Name = "btn10";
+            this.btn10.Size = new System.Drawing.Size(100, 120);
+            this.btn10.TabIndex = 11;
+            this.btn10.Text = "9";
+            this.btn10.UseVisualStyleBackColor = true;
+            this.btn10.Click += new System.EventHandler(this.btn10_Click);
+            // 
             // Kalkulator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn10);
             this.Controls.Add(this.txt);
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn8);
@@ -175,6 +192,7 @@
         private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.Button btn10;
     }
 }
 
